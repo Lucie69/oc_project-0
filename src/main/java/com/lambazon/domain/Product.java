@@ -52,7 +52,8 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
-		if (quantity < 0){
+		//condition added to manage negative quantity when a product is created
+	    if (quantity < 0){
 			this.quantity = 0;
 		}
 		else{
