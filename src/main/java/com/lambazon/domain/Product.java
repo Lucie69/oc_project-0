@@ -66,7 +66,8 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		if (price < 0){
+        /* condition added to manage negative price and price higher than 1000 when a product is created */
+	    if (price < 0){
 		    this.price = 0;
         }
         else{
