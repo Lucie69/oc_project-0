@@ -52,7 +52,7 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
-		//condition added to manage negative quantity when a product is created
+        /* condition added to manage negative quantity when a product is created */
 	    if (quantity < 0){
 			this.quantity = 0;
 		}
@@ -80,6 +80,7 @@ public class Product {
 	}
 
 	public double getInventoryPrice() {
+        /* calculate the inventory price of a product */
 		return this.quantity*this.price;
 	}
 }
