@@ -20,7 +20,8 @@ public class ProductTests {
 
 	@Test
 	public void test_minimum_price_validation_for_product() {
-		Product p = new Product(0, -50, 0, null, null);
+		//modification of the price to have negative integer
+		Product p = new Product(0, 50, -50, null, null);
 		assertThat(p.getPrice()).isEqualTo(0);
 	}
 
