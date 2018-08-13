@@ -14,14 +14,14 @@ public class ProductTests {
 	
 	@Test
 	public void test_valid_quantity_validation_for_product() {
-		// modification of the test to test indeed a valid quantity (positive quantity)
+		/* modification of the test to test indeed a valid quantity (positive quantity) */
 	    Product p = new Product(0, 50, 0, null, null);
 		assertThat(p.getQuantity()).isEqualTo(50);
 	}
 
 	@Test
 	public void test_minimum_price_validation_for_product() {
-		//modification of the price to have negative integer
+		/* modification of the price to have negative integer */
 		Product p = new Product(0, 50, -50, null, null);
 		assertThat(p.getPrice()).isEqualTo(0);
 	}
