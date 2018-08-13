@@ -69,7 +69,12 @@ public class Product {
 		    this.price = 0;
         }
         else{
-		    this.price = price;
+		    if (price > 1000){
+		        this.price = 1000;
+            }
+            else {
+		        this.price = price;
+            }
         }
 	}
 
